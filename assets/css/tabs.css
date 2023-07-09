@@ -50,6 +50,11 @@
         margin: 30px 10px;
     }
 
+    .scientific-domains {
+        display:'flex';
+        width:'10px'
+    }
+
     .tabs-title {
         margin: 30px;
     }
@@ -71,6 +76,11 @@
     .grid-container {
         display: block;
     }
+
+                .scientific-domains {
+                    display: 'flex';
+                    width: '10px'
+                }
 }
 
 /* Visualization */

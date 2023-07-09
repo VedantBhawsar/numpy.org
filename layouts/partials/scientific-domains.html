@@ -10,14 +10,18 @@
     </p>
     {{- end }}
     <!-- First Row -->
-    <table>
+    <div
+    style="overflow: scroll;"
+    >
+        <table
+        >
         <tr class="highlight-th">
             {{- range $librariesrow1 }}
                 <td class="bold-text">{{ .title }}</td>
-            {{- end }}
-        </tr>
-        <tr>
-            {{- range $librariesrow1 }}
+                {{- end }}
+</tr>
+            <tr>
+                {{- range $librariesrow1 }}
                 <td><img class="cell-layout" src="{{ .img }}" alt="{{ .alttext }}"></td>
             {{- end }}
         </tr>
@@ -61,17 +65,17 @@
         <!-- Second Row -->
         <tr class="highlight-th">
             {{- range $librariesrow2 }}
-                <td class="bold-text">{{ .title }}</td>
+            <td class="bold-text">{{ .title }}</td>
             {{- end }}
         </tr>
         <tr>
             {{- range $librariesrow2 }}
                 <td><img class="cell-layout" src="{{ .img }}" alt="{{ .alttext }}"></td>
-            {{- end }}
+                {{- end }}
         </tr>
         <tr>
             <td class="center-text"><a href="https://biopython.org">BioPython</a></td>
-            <td class="center-text"><a href="https://pystan.readthedocs.io/en/latest/">PyStan</a></td>
+            <td class="center-text"><a href="https://pystan.readthedocs.io/ en/latest/">PyStan</a></td>
             <td class="center-text"><a href="https://www.scipy.org">SciPy</a></td>
             <td class="center-text"><a href="https://cantera.org/">Cantera</a></td>
             <td class="center-text"><a href="https://pangeo.io/">Pangeo</a></td>
@@ -106,4 +110,5 @@
             <td class="lastrow-center-text"></td>
         </tr>
     </table>
+</div>
 </li>
